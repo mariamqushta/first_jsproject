@@ -25,7 +25,7 @@ function drawcartproduct(products){
         `
     }
     )
-    console.log(localStorage.getItem("productsINcart"))
-    // allproducts.innerHTML=y;
 
-}
+    allproducts.innerHTML=y;}
+    
+

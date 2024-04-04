@@ -12,7 +12,7 @@ let logoutbtn = document.querySelector("#logout")
 logoutbtn.addEventListener("click",function(){
     localStorage.clear()
     setTimeout(()=>{
-        window.location = "login.html"
+        window.location = "login.html";
     } , 1500)
 }
 )

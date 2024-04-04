@@ -11,7 +11,7 @@ if(localStorage.getItem("username")){
 let logoutbtn = document.querySelector("#logout")
 logoutbtn.addEventListener("click",function(){
     localStorage.clear();
-    setTimeout(()=>{
+    setTimeout(() => {
         window.location = "login.html";
     },1500)
 }
@@ -107,11 +107,11 @@ if(addedItem){
             let choosenItem = products.find((item) => item.id === id)
             cartproductDiv.innerHTML +=`<p> ${choosenItem.title}</p>`
             let cartproductlength = document.querySelectorAll(".carts_product div p")
-            addedItem=[...addedItem,choosenItem]
-            localStorage.setItem["productsINcart",JSON.stringify(addedItem) ]
-
+            addedItem=[...addedItem ,choosenItem]
+            localStorage.setItem("productsINcart" ,JSON.stringify(addedItem) )
+            let x = cartproductlength.length;
             badge.style.display="block"
-            badge.innerHTML = cartproductlength.length;
+            badge.innerHTML = x;
         }
     }else{
         window.location="login.html"
